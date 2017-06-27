@@ -8,29 +8,29 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class MapPassengerVC: UIViewController {
-
+class MapPassengerVC: UIViewController, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var txtAddress: UITextView!
+    
+    var locationManager: CLLocationManager!
+    var previousAddress: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestLocation()
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func request(_ sender: UIButton) {
+        //make a request
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

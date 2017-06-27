@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		330A1EC11F0226E8003BF722 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A1EC01F0226E8003BF722 /* CoreLocation.framework */; };
 		330A1EC31F0226F7003BF722 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 330A1EC21F0226F7003BF722 /* MapKit.framework */; };
+		330A1EC51F023C41003BF722 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 330A1EC41F023C41003BF722 /* GoogleService-Info.plist */; };
 		84E4D89B1F010BD900AED573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D89A1F010BD900AED573 /* AppDelegate.swift */; };
 		84E4D89D1F010BD900AED573 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D89C1F010BD900AED573 /* ViewController.swift */; };
 		84E4D8A01F010BD900AED573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E4D89E1F010BD900AED573 /* Main.storyboard */; };
@@ -21,11 +22,13 @@
 		84E4D8B61F0111F000AED573 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D8B51F0111F000AED573 /* ProfileVC.swift */; };
 		84E4D8B81F01120D00AED573 /* OrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D8B71F01120D00AED573 /* OrdersVC.swift */; };
 		84E4D8BA1F01154900AED573 /* MapPassengerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D8B91F01154900AED573 /* MapPassengerVC.swift */; };
+		8510C9E5F6F4DB909CF382E7 /* libPods-AUCADriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A14473C516565027C533F7C9 /* libPods-AUCADriver.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		330A1EC01F0226E8003BF722 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		330A1EC21F0226F7003BF722 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		330A1EC41F023C41003BF722 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84E4D8971F010BD900AED573 /* AUCADriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUCADriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E4D89A1F010BD900AED573 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E4D89C1F010BD900AED573 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		84E4D8B51F0111F000AED573 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = Controllers/ProfileVC.swift; sourceTree = "<group>"; };
 		84E4D8B71F01120D00AED573 /* OrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrdersVC.swift; path = Controllers/OrdersVC.swift; sourceTree = "<group>"; };
 		84E4D8B91F01154900AED573 /* MapPassengerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPassengerVC.swift; path = Controllers/MapPassengerVC.swift; sourceTree = "<group>"; };
+		A14473C516565027C533F7C9 /* libPods-AUCADriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AUCADriver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F3C37ADAD35C08A3CDC446 /* Pods-AUCADriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUCADriver.release.xcconfig"; path = "Pods/Target Support Files/Pods-AUCADriver/Pods-AUCADriver.release.xcconfig"; sourceTree = "<group>"; };
+		E19343BAAAFCA2DB30C8F6B3 /* Pods-AUCADriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUCADriver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AUCADriver/Pods-AUCADriver.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			files = (
 				330A1EC31F0226F7003BF722 /* MapKit.framework in Frameworks */,
 				330A1EC11F0226E8003BF722 /* CoreLocation.framework in Frameworks */,
+				8510C9E5F6F4DB909CF382E7 /* libPods-AUCADriver.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +67,18 @@
 			children = (
 				330A1EC21F0226F7003BF722 /* MapKit.framework */,
 				330A1EC01F0226E8003BF722 /* CoreLocation.framework */,
+				A14473C516565027C533F7C9 /* libPods-AUCADriver.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D44562D055FB4A9F0431584 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E19343BAAAFCA2DB30C8F6B3 /* Pods-AUCADriver.debug.xcconfig */,
+				B1F3C37ADAD35C08A3CDC446 /* Pods-AUCADriver.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		84E4D88E1F010BD900AED573 = {
@@ -70,6 +87,7 @@
 				84E4D8991F010BD900AED573 /* AUCADriver */,
 				84E4D8981F010BD900AED573 /* Products */,
 				330A1EBF1F0226E7003BF722 /* Frameworks */,
+				4D44562D055FB4A9F0431584 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +107,7 @@
 				84E4D89E1F010BD900AED573 /* Main.storyboard */,
 				84E4D8A11F010BD900AED573 /* Assets.xcassets */,
 				84E4D8A31F010BD900AED573 /* LaunchScreen.storyboard */,
+				330A1EC41F023C41003BF722 /* GoogleService-Info.plist */,
 				84E4D8A61F010BD900AED573 /* Info.plist */,
 			);
 			path = AUCADriver;
@@ -116,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84E4D8A91F010BD900AED573 /* Build configuration list for PBXNativeTarget "AUCADriver" */;
 			buildPhases = (
+				9B67498F4E377B0B296AF859 /* [CP] Check Pods Manifest.lock */,
 				84E4D8931F010BD900AED573 /* Sources */,
 				84E4D8941F010BD900AED573 /* Frameworks */,
 				84E4D8951F010BD900AED573 /* Resources */,
+				311BC95C52C9CDE956CF8C01 /* [CP] Embed Pods Frameworks */,
+				247FE0C0422CC191036872BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,12 +191,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E4D8A51F010BD900AED573 /* LaunchScreen.storyboard in Resources */,
+				330A1EC51F023C41003BF722 /* GoogleService-Info.plist in Resources */,
 				84E4D8A21F010BD900AED573 /* Assets.xcassets in Resources */,
 				84E4D8A01F010BD900AED573 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		247FE0C0422CC191036872BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AUCADriver/Pods-AUCADriver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		311BC95C52C9CDE956CF8C01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AUCADriver/Pods-AUCADriver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B67498F4E377B0B296AF859 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84E4D8931F010BD900AED573 /* Sources */ = {
@@ -256,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -301,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -312,6 +383,7 @@
 		};
 		84E4D8AA1F010BD900AED573 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19343BAAAFCA2DB30C8F6B3 /* Pods-AUCADriver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -327,6 +399,7 @@
 		};
 		84E4D8AB1F010BD900AED573 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F3C37ADAD35C08A3CDC446 /* Pods-AUCADriver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
