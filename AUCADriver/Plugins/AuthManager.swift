@@ -40,6 +40,33 @@ class AuthManager {
         }
     }
     
+    func signUp(with email: String, password: String, loginHandler: LoginHandler?) {
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            if error != nil {
+                
+                self.handleErrors(err: error! as NSError, loginHandler: loginHandler)
+            } else {
+                if user?.uid != nil {
+                    self.login(email: email, password: password, loginHandler: loginHandler)
+                } else {
+                    
+                }
+            }
+        }
+    }
+    
+    func logOut() -> Bool {
+        if Auth.auth().currentUser != nil {
+            do {
+                try Auth.auth().signOut()
+                return true
+            } catch {
+                return false
+            }
+        }
+        return true
+    }
+    
     private func handleErrors(err: NSError, loginHandler: LoginHandler?) {
         if let errCode = AuthErrorCode(rawValue: err.code) {
             switch errCode {

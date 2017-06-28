@@ -373,7 +373,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Зарегестрироваться"/>
                                 <connections>
-                                    <action selector="signIn" destination="Wvb-c6-OcU" eventType="touchUpInside" id="uW4-5h-B8K"/>
+                                    <action selector="signUp" destination="Wvb-c6-OcU" eventType="touchUpInside" id="mf4-4d-Rzy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Водитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0np-41-TJ3">
@@ -389,7 +389,8 @@
                     <connections>
                         <outlet property="txtEmail" destination="otE-qJ-Vyu" id="l7k-Ja-reL"/>
                         <outlet property="txtPassowrd" destination="M7y-4O-mQd" id="RCt-v6-Ggy"/>
-                        <segue destination="0XX-KX-ALA" kind="show" id="zq8-fe-0tB"/>
+                        <segue destination="0XX-KX-ALA" kind="presentation" identifier="DriverSignUpToFillData" id="aLe-vq-BTN"/>
+                        <segue destination="8SZ-q8-T21" kind="presentation" identifier="DriverLogin" id="jcm-kR-0CW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVV-lo-DtU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -458,6 +459,7 @@
         <image name="locationPoint" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jcm-kR-0CW"/>
         <segue reference="8MT-TG-YAc"/>
     </inferredMetricsTieBreakers>
 </document>
