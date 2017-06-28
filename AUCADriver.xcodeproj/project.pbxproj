@@ -12,7 +12,7 @@
 		330A1EC51F023C41003BF722 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 330A1EC41F023C41003BF722 /* GoogleService-Info.plist */; };
 		33F7C6771F0242EC00149B91 /* DriverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C6761F0242EC00149B91 /* DriverLoginVC.swift */; };
 		33F7C6791F0242FB00149B91 /* PassengerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C6781F0242FB00149B91 /* PassengerLoginVC.swift */; };
-		33F7C67C1F0243E700149B91 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C67B1F0243E700149B91 /* AuthProvider.swift */; };
+		33F7C67C1F0243E700149B91 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C67B1F0243E700149B91 /* AuthManager.swift */; };
 		84E4D89B1F010BD900AED573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D89A1F010BD900AED573 /* AppDelegate.swift */; };
 		84E4D89D1F010BD900AED573 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4D89C1F010BD900AED573 /* ViewController.swift */; };
 		84E4D8A01F010BD900AED573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E4D89E1F010BD900AED573 /* Main.storyboard */; };
@@ -34,7 +34,7 @@
 		330A1EC41F023C41003BF722 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33F7C6761F0242EC00149B91 /* DriverLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriverLoginVC.swift; path = Controllers/DriverLoginVC.swift; sourceTree = "<group>"; };
 		33F7C6781F0242FB00149B91 /* PassengerLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassengerLoginVC.swift; path = Controllers/PassengerLoginVC.swift; sourceTree = "<group>"; };
-		33F7C67B1F0243E700149B91 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthProvider.swift; path = Plugins/AuthProvider.swift; sourceTree = "<group>"; };
+		33F7C67B1F0243E700149B91 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = Plugins/AuthManager.swift; sourceTree = "<group>"; };
 		84E4D8971F010BD900AED573 /* AUCADriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUCADriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E4D89A1F010BD900AED573 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84E4D89C1F010BD900AED573 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		33F7C67A1F0243B600149B91 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				33F7C67B1F0243E700149B91 /* AuthProvider.swift */,
+				33F7C67B1F0243E700149B91 /* AuthManager.swift */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 				84E4D8BA1F01154900AED573 /* MapPassengerVC.swift in Sources */,
 				84E4D8B41F0111D400AED573 /* MapDriverVC.swift in Sources */,
 				84E4D8B61F0111F000AED573 /* ProfileVC.swift in Sources */,
-				33F7C67C1F0243E700149B91 /* AuthProvider.swift in Sources */,
+				33F7C67C1F0243E700149B91 /* AuthManager.swift in Sources */,
 				84E4D8B21F0111BC00AED573 /* RulesVC.swift in Sources */,
 				84E4D89D1F010BD900AED573 /* ViewController.swift in Sources */,
 				84E4D8AD1F010EE700AED573 /* DriverRegistrationVC.swift in Sources */,
