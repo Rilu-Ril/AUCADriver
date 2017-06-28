@@ -17,6 +17,7 @@ class DriverLoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserDefaults.standard.set("driver", forKey: "role")
     }
     
     

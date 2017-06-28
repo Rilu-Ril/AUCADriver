@@ -8,13 +8,15 @@
 
 import UIKit
 
-class PassengerLoginVC: UIViewController {
+class RiderLoginVC: UIViewController {
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassowrd: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Delete this line later of replace
+        UserDefaults.standard.set("rider", forKey: "role")
         
         // Do any additional setup after loading the view.
     }

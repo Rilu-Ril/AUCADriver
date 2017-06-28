@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 import FirebaseAuth
 
 struct LoginErrorCode {
@@ -43,17 +44,18 @@ class AuthManager {
     func signUp(with email: String, password: String, loginHandler: LoginHandler?) {
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if error != nil {
-                
                 self.handleErrors(err: error! as NSError, loginHandler: loginHandler)
             } else {
                 if user?.uid != nil {
+                    DBManager.shared.saveUser(with: (user?.uid)! , email: email, password: password)
                     self.login(email: email, password: password, loginHandler: loginHandler)
                 } else {
-                    
+                
                 }
             }
         }
     }
+    
     
     func logOut() -> Bool {
         if Auth.auth().currentUser != nil {
