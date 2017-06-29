@@ -9,7 +9,8 @@
 import Foundation
 
 class Constants {
-    
+    //AuthManager
+    static let SEND_VERIFICATION_MAIL_FAILED = "Unable to send verification mail"
     // DBManager
     
     static let RIDERS       = "riders"
@@ -31,4 +32,6 @@ class Constants {
     // Login
     static let LOGIN_CREATE_USER_ERROR  =  "Возникла ошибка при создании аккаунта пользователя. Попробуйте еще раз"
     static let LOGIN_EMPTY_FIELDS_ERROR = "Заполните все поля"
+    static let LOGIN_VERIFICATION_SENT = "Вам отправлено письмо на вашу почту с подтверждающей ссылкой. Пожалуйста пройдите по ссылке чтобы подтвердить, в том, что вы действительно студент ауца"
+
 }

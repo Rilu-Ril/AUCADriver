@@ -197,6 +197,7 @@
 				TargetAttributes = {
 					84E4D8961F010BD900AED573 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = U5DCDBG2W2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -427,7 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U5DCDBG2W2;
 				INFOPLIST_FILE = AUCADriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iCoder.AUCADriver;
@@ -443,7 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U5DCDBG2W2;
 				INFOPLIST_FILE = AUCADriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iCoder.AUCADriver;
