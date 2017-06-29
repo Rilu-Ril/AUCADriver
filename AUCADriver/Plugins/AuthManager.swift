@@ -11,11 +11,11 @@ import Firebase
 import FirebaseAuth
 
 struct LoginErrorCode {
-    static let INVALID_EMAIL = "Неправильно введен адрес электронной почты."
-    static let WRONG_PASSWORD = "Неправильно введен пароль."
-    static let USER_NOT_FOUND = "Пользователь не найден."
-    static let EMAIL_IN_USER = "Пользователь зарегестрирован в системе."
-    static let WEAK_PASSWORD = "Слабый пароль. Введите новый"
+    static let INVALID_EMAIL    = "Неправильно введен адрес электронной почты."
+    static let WRONG_PASSWORD   = "Неправильно введен пароль."
+    static let USER_NOT_FOUND   = "Пользователь не найден."
+    static let EMAIL_IN_USER    = "Пользователь зарегестрирован в системе."
+    static let WEAK_PASSWORD    = "Слабый пароль. Введите новый"
     
 }
 

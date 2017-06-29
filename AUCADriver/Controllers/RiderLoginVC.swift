@@ -10,23 +10,47 @@ import UIKit
 
 class RiderLoginVC: UIViewController {
 
-    @IBOutlet weak var txtEmail: UITextField!
+    
+    @IBOutlet weak var txtEmail:    UITextField!
     @IBOutlet weak var txtPassowrd: UITextField!
+    
+    private let RIDER_LOGIN_ID  = "RiderLogin"
+    private let RIDER_SIGNUP_ID = "RiderSignUpToFillData"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //Delete this line later of replace
         UserDefaults.standard.set("rider", forKey: "role")
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func login() {
-        
+        if txtEmail.text != nil &&
+            txtPassowrd.text != nil {
+            AuthManager.shared.login(email: txtEmail.text!, password: txtPassowrd.text!, loginHandler: { (message) in
+                if message != nil {
+                    self.showErrorAlert(message!)
+                } else {
+                    self.performSegue(withIdentifier: self.RIDER_LOGIN_ID, sender: nil)
+                }
+                
+            })
+        } else {
+            showErrorAlert(Constants.LOGIN_EMPTY_FIELDS_ERROR)
+        }
     }
     
     @IBAction func signIn() {
-        
+        if txtEmail.text != nil &&
+            txtPassowrd.text != nil {
+            AuthManager.shared.signUp(with: txtEmail.text!, password: txtPassowrd.text!, loginHandler: { (message) in
+                if message !=  nil {
+                    self.showErrorAlert(Constants.LOGIN_CREATE_USER_ERROR)
+                } else {
+                    self.performSegue(withIdentifier: self.RIDER_SIGNUP_ID, sender: nil)
+                }
+            })
+        } else {
+           showErrorAlert(Constants.LOGIN_EMPTY_FIELDS_ERROR)
+        }
     }
-
 }

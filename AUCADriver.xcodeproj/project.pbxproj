@@ -12,6 +12,7 @@
 		330A1EC51F023C41003BF722 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 330A1EC41F023C41003BF722 /* GoogleService-Info.plist */; };
 		3359FFA11F03B6FC00616C6C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3359FFA01F03B6FC00616C6C /* DBManager.swift */; };
 		3359FFA31F03B84300616C6C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3359FFA21F03B84300616C6C /* Constants.swift */; };
+		3359FFA81F04BAC300616C6C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3359FFA71F04BAC300616C6C /* UIViewController+Alert.swift */; };
 		33F7C6771F0242EC00149B91 /* DriverLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C6761F0242EC00149B91 /* DriverLoginVC.swift */; };
 		33F7C6791F0242FB00149B91 /* RiderLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C6781F0242FB00149B91 /* RiderLoginVC.swift */; };
 		33F7C67C1F0243E700149B91 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C67B1F0243E700149B91 /* AuthManager.swift */; };
@@ -36,6 +37,7 @@
 		330A1EC41F023C41003BF722 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3359FFA01F03B6FC00616C6C /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Plugins/DBManager.swift; sourceTree = "<group>"; };
 		3359FFA21F03B84300616C6C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Plugins/Constants.swift; sourceTree = "<group>"; };
+		3359FFA71F04BAC300616C6C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alert.swift"; path = "Extensions/UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		33F7C6761F0242EC00149B91 /* DriverLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DriverLoginVC.swift; path = Controllers/DriverLoginVC.swift; sourceTree = "<group>"; };
 		33F7C6781F0242FB00149B91 /* RiderLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RiderLoginVC.swift; path = Controllers/RiderLoginVC.swift; sourceTree = "<group>"; };
 		33F7C67B1F0243E700149B91 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = Plugins/AuthManager.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3359FFA41F04B9F100616C6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3359FFA71F04BAC300616C6C /* UIViewController+Alert.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		33F7C67A1F0243B600149B91 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		84E4D8991F010BD900AED573 /* AUCADriver */ = {
 			isa = PBXGroup;
 			children = (
+				3359FFA41F04B9F100616C6C /* Extensions */,
 				84E4D89A1F010BD900AED573 /* AppDelegate.swift */,
 				33F7C67A1F0243B600149B91 /* Plugins */,
 				84E4D8B01F01117600AED573 /* Controllers */,
@@ -281,6 +292,7 @@
 				3359FFA11F03B6FC00616C6C /* DBManager.swift in Sources */,
 				84E4D8BA1F01154900AED573 /* MapPassengerVC.swift in Sources */,
 				84E4D8B41F0111D400AED573 /* MapDriverVC.swift in Sources */,
+				3359FFA81F04BAC300616C6C /* UIViewController+Alert.swift in Sources */,
 				84E4D8B61F0111F000AED573 /* ProfileVC.swift in Sources */,
 				33F7C67C1F0243E700149B91 /* AuthManager.swift in Sources */,
 				84E4D8B21F0111BC00AED573 /* RulesVC.swift in Sources */,

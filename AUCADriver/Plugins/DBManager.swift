@@ -37,13 +37,13 @@ class DBManager {
             let data: [String: Any] = [Constants.EMAIL: email,
                                        Constants.PASSWORD: password,
                                        Constants.IS_RIDER: false]
-            ridersRef.child(userId).child(Constants.DATA).setValue(data)
+            driversRef.child(userId).child(Constants.DATA).setValue(data)
             return
         }
         
         let data: [String: Any] = [Constants.EMAIL: email,
-                                             Constants.PASSWORD: password,
-                                             Constants.IS_RIDER: true]
+                                   Constants.PASSWORD: password,
+                                   Constants.IS_RIDER: true]
         
         ridersRef.child(userId).child(Constants.DATA).setValue(data)
         
