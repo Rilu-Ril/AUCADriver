@@ -57,7 +57,6 @@ class AuthManager {
                     } else {
                         loginHandler?(nil)
                     }
-                    
                 })
             }
         }

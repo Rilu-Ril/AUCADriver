@@ -77,7 +77,6 @@
                                 <state key="normal" title="Войти"/>
                                 <connections>
                                     <action selector="login" destination="OkI-9M-8fD" eventType="touchUpInside" id="G7G-bZ-1kM"/>
-                                    <segue destination="8SZ-q8-T21" kind="presentation" identifier="RiderLogin" id="IYR-1e-Oqx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGR-0G-fO8">
@@ -86,7 +85,6 @@
                                 <state key="normal" title="Зарегестрироваться"/>
                                 <connections>
                                     <action selector="signIn" destination="OkI-9M-8fD" eventType="touchUpInside" id="WHX-o5-lzf"/>
-                                    <segue destination="oww-gV-G5C" kind="presentation" identifier="RiderSignUpToFillData" id="sxc-G9-QQs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пассажир" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAW-w9-y8G">
@@ -102,6 +100,8 @@
                     <connections>
                         <outlet property="txtEmail" destination="Sw7-fF-F9g" id="VCo-3V-rcz"/>
                         <outlet property="txtPassowrd" destination="3E5-rO-dc5" id="dVg-1R-nr4"/>
+                        <segue destination="oww-gV-G5C" kind="presentation" identifier="RiderSignUpToFillData" id="9Lc-q1-xmU"/>
+                        <segue destination="8SZ-q8-T21" kind="presentation" identifier="RiderLogin" id="KBh-S5-cEm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aj-en-60F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -471,6 +471,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wAs-Dz-eTE"/>
-        <segue reference="IYR-1e-Oqx"/>
+        <segue reference="KBh-S5-cEm"/>
     </inferredMetricsTieBreakers>
 </document>
