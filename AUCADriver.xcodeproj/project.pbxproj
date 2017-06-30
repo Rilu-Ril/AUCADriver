@@ -132,8 +132,8 @@
 		84E4D8991F010BD900AED573 /* AUCADriver */ = {
 			isa = PBXGroup;
 			children = (
-				3359FFA41F04B9F100616C6C /* Extensions */,
 				84E4D89A1F010BD900AED573 /* AppDelegate.swift */,
+				3359FFA41F04B9F100616C6C /* Extensions */,
 				33F7C67A1F0243B600149B91 /* Plugins */,
 				84E4D8B01F01117600AED573 /* Controllers */,
 				84E4D89E1F010BD900AED573 /* Main.storyboard */,
