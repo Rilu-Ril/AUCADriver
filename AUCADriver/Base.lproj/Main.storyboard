@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0up-yu-jyn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8SZ-q8-T21">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -231,23 +231,9 @@
                     <view key="view" contentMode="scaleToFill" id="KIN-F9-2FZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nMR-26-gHV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="nMR-26-gHV" firstAttribute="leading" secondItem="KIN-F9-2FZ" secondAttribute="leading" id="Axh-w9-Fu7"/>
-                            <constraint firstItem="nMR-26-gHV" firstAttribute="top" secondItem="8ms-BC-y5r" secondAttribute="bottom" id="Uqi-m0-H4x"/>
-                            <constraint firstAttribute="trailing" secondItem="nMR-26-gHV" secondAttribute="trailing" id="dIj-jA-6gt"/>
-                            <constraint firstItem="F6F-pk-cKv" firstAttribute="top" secondItem="nMR-26-gHV" secondAttribute="bottom" id="vaF-qK-1y2"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Карта" id="D3M-sq-tSu"/>
-                    <connections>
-                        <outlet property="map" destination="nMR-26-gHV" id="DMr-e2-QUY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4I-w6-tJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,7 +438,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0up-yu-jyn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VYI-w3-t0z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VYI-w3-t0z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -471,6 +457,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wAs-Dz-eTE"/>
-        <segue reference="KBh-S5-cEm"/>
+        <segue reference="jcm-kR-0CW"/>
     </inferredMetricsTieBreakers>
 </document>
